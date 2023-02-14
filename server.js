@@ -27,6 +27,7 @@ app.use(require("./config/checkToken"))
 
 // Put API routes here, before the "catch all" route
 app.use('/api/users', require('./routes/api/users'))
+app.use('/api/notes', require('./routes/api/notes'))
 
 // catch all route
 app.get('/*', function(req, res) {
